@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Rrr-SN-4rM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Rrr-SN-4rM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -128,6 +128,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="p2N-5Y-4qa" id="QoP-0n-gSX"/>
+                        <outlet property="tableView" destination="pPA-8r-uEH" id="UIf-IB-JOA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vSh-SJ-iOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -145,13 +146,42 @@
                     <view key="view" contentMode="scaleToFill" id="Lxb-rd-ad4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Eo4-7N-ziN">
+                                <rect key="frame" x="55" y="318" width="265" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" verticalHuggingPriority="1000" placeholderIntrinsicWidth="205" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tGl-nW-m0y">
+                                        <rect key="frame" x="0.0" y="0.0" width="205" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="205" id="tyV-2X-j1M"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1oq-Hw-obl">
+                                        <rect key="frame" x="235" y="0.0" width="30" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="addToCoreData:" destination="cBt-bC-tUj" eventType="touchUpInside" id="bly-xP-sTX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Eo4-7N-ziN" firstAttribute="centerX" secondItem="Lxb-rd-ad4" secondAttribute="centerX" id="jUB-0M-7Gf"/>
+                            <constraint firstItem="Eo4-7N-ziN" firstAttribute="centerY" secondItem="Lxb-rd-ad4" secondAttribute="centerY" id="u3F-Y5-NEQ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rtn-vL-Nj5">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="8NZ-jp-Mv4"/>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="8NZ-jp-Mv4" id="dkw-fv-Mzf"/>
+                        <outlet property="textField" destination="tGl-nW-m0y" id="Lpr-QP-j74"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5K-dV-z6h" userLabel="First Responder" sceneMemberID="firstResponder"/>

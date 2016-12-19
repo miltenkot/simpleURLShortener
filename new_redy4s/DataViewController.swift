@@ -8,9 +8,11 @@
 
 import UIKit
 
-class DataViewController: UIViewController {
+class DataViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    var urlsTable:[URL_Entity] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         if self.revealViewController() != nil{
@@ -18,25 +20,58 @@ class DataViewController: UIViewController {
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
             revealViewController().rearViewRevealOverdraw = 0
-
-
-        // Do any additional setup after loading the view.
+            //table view
+            tableView.dataSource = self
+            tableView.delegate = self
+            
+            
+            
+            // Do any additional setup after loading the view.
+        }
     }
-}
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        //get the data from core data
+        getData()
+        //reload the table view
+        tableView.reloadData()
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return urlsTable.count
     }
-    */
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        let url_entity = urlsTable[indexPath.row]
+        
+        cell.textLabel?.text = url_entity.orginal_url!
+        return cell
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        let context =  (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        if editingStyle == .delete{
+            let url_entity = urlsTable[indexPath.row]
+            context.delete(url_entity)
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            do {
+                
+                urlsTable = try context.fetch(URL_Entity.fetchRequest())
+            }
+            catch{
+                print("Fetching Field")
+            }
+        }
+        tableView.reloadData()
+    }
+    func getData(){
+        let context =  (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        do {
+            
+            urlsTable = try context.fetch(URL_Entity.fetchRequest())
+        }
+        catch{
+            print("Fetching Field")
+        }
+    }
+
 
 }

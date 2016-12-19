@@ -9,6 +9,7 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    @IBOutlet weak var textField: UITextField!
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
     override func viewDidLoad() {
@@ -36,6 +37,15 @@ class MainViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    // MARK: - Actions
 
+    @IBAction func addToCoreData(_ sender: UIButton) {
+      let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let data_model = URL_Entity(context: context)
+        data_model.orginal_url = textField.text!
+        //Save the data to coredata
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+    
+    }
 
 }

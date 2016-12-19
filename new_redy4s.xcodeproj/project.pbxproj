@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DF1885221DFDE36F0005C844 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1885211DFDE36F0005C844 /* MainViewController.swift */; };
 		DFB430411DFEAA990041B89C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB430401DFEAA990041B89C /* CoreData.framework */; };
-		DFB430441DFEAB380041B89C /* Data_Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFB430421DFEAB380041B89C /* Data_Model.xcdatamodeld */; };
 		DFB430671DFEBC9E0041B89C /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB430661DFEBC9E0041B89C /* DataViewController.swift */; };
 		DFBB9E0E1DF4B8FD006C62D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBB9E0D1DF4B8FD006C62D0 /* AppDelegate.swift */; };
 		DFBB9E131DF4B8FD006C62D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFBB9E111DF4B8FD006C62D0 /* Main.storyboard */; };
@@ -17,12 +16,14 @@
 		DFBB9E181DF4B8FD006C62D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFBB9E161DF4B8FD006C62D0 /* LaunchScreen.storyboard */; };
 		DFBB9E221DF4BB18006C62D0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBB9E211DF4BB18006C62D0 /* SWRevealViewController.m */; };
 		DFBB9E271DF4BF7A006C62D0 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBB9E261DF4BF7A006C62D0 /* MenuController.swift */; };
+		DFCB17051E07F3C3003DE398 /* Data_Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFCB17031E07F3C3003DE398 /* Data_Model.xcdatamodeld */; };
+		DFCB17081E07F5A4003DE398 /* URL_Entity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCB17061E07F5A4003DE398 /* URL_Entity+CoreDataClass.swift */; };
+		DFCB17091E07F5A4003DE398 /* URL_Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCB17071E07F5A4003DE398 /* URL_Entity+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF1885211DFDE36F0005C844 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DFB430401DFEAA990041B89C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		DFB430431DFEAB380041B89C /* Data_Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data_Model.xcdatamodel; sourceTree = "<group>"; };
 		DFB430661DFEBC9E0041B89C /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		DFBB9E0A1DF4B8FD006C62D0 /* new_redy4s.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = new_redy4s.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFBB9E0D1DF4B8FD006C62D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +35,9 @@
 		DFBB9E201DF4BB18006C62D0 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		DFBB9E211DF4BB18006C62D0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		DFBB9E261DF4BF7A006C62D0 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		DFCB17041E07F3C3003DE398 /* Data_Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data_Model.xcdatamodel; sourceTree = "<group>"; };
+		DFCB17061E07F5A4003DE398 /* URL_Entity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL_Entity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DFCB17071E07F5A4003DE398 /* URL_Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL_Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +88,7 @@
 				DFBB9E141DF4B8FD006C62D0 /* Assets.xcassets */,
 				DFBB9E161DF4B8FD006C62D0 /* LaunchScreen.storyboard */,
 				DFBB9E191DF4B8FD006C62D0 /* Info.plist */,
-				DFB430421DFEAB380041B89C /* Data_Model.xcdatamodeld */,
+				DFCB170A1E07F618003DE398 /* CoreDataFiles */,
 				DFBB9E231DF4BB3B006C62D0 /* SWRevealController */,
 			);
 			path = new_redy4s;
@@ -98,6 +102,16 @@
 				DFBB9E1F1DF4BB17006C62D0 /* new_redy4s-Bridging-Header.h */,
 			);
 			name = SWRevealController;
+			sourceTree = "<group>";
+		};
+		DFCB170A1E07F618003DE398 /* CoreDataFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DFCB17061E07F5A4003DE398 /* URL_Entity+CoreDataClass.swift */,
+				DFCB17071E07F5A4003DE398 /* URL_Entity+CoreDataProperties.swift */,
+				DFCB17031E07F3C3003DE398 /* Data_Model.xcdatamodeld */,
+			);
+			name = CoreDataFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +141,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = miltenkot;
 				TargetAttributes = {
 					DFBB9E091DF4B8FD006C62D0 = {
@@ -174,12 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFCB17091E07F5A4003DE398 /* URL_Entity+CoreDataProperties.swift in Sources */,
 				DFBB9E0E1DF4B8FD006C62D0 /* AppDelegate.swift in Sources */,
 				DFBB9E271DF4BF7A006C62D0 /* MenuController.swift in Sources */,
-				DFB430441DFEAB380041B89C /* Data_Model.xcdatamodeld in Sources */,
 				DFBB9E221DF4BB18006C62D0 /* SWRevealViewController.m in Sources */,
+				DFCB17081E07F5A4003DE398 /* URL_Entity+CoreDataClass.swift in Sources */,
 				DFB430671DFEBC9E0041B89C /* DataViewController.swift in Sources */,
 				DF1885221DFDE36F0005C844 /* MainViewController.swift in Sources */,
+				DFCB17051E07F3C3003DE398 /* Data_Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +239,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -273,6 +290,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -353,12 +371,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		DFB430421DFEAB380041B89C /* Data_Model.xcdatamodeld */ = {
+		DFCB17031E07F3C3003DE398 /* Data_Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				DFB430431DFEAB380041B89C /* Data_Model.xcdatamodel */,
+				DFCB17041E07F3C3003DE398 /* Data_Model.xcdatamodel */,
 			);
-			currentVersion = DFB430431DFEAB380041B89C /* Data_Model.xcdatamodel */;
+			currentVersion = DFCB17041E07F3C3003DE398 /* Data_Model.xcdatamodel */;
 			path = Data_Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
