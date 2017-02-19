@@ -1,5 +1,4 @@
 import Foundation
-
 public enum URLShortenerResult: Error {
     case unexpectedError(description: String)
     case httpError(response: URLResponse)
@@ -76,7 +75,7 @@ open class URLShortenerRequest {
             }
             
             completion(.success(shortURL))
-        }) 
+        })
         
         task.resume()
     }
@@ -88,7 +87,7 @@ open class URLShortenerRequest {
             result = $0
             semaphore.signal()
         }
-       
+        _ = semaphore.wait(timeout: DispatchTime.distantFuture)
         return result!
     }
 }

@@ -9,7 +9,10 @@
 import UIKit
 
 class DataViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+   
+   
 
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var menuButton: UIBarButtonItem!
     var urlsTable:[URL_Entity] = []
@@ -24,7 +27,8 @@ class DataViewController: UIViewController,UITableViewDataSource,UITableViewDele
             tableView.dataSource = self
             tableView.delegate = self
             
-            
+             
+           
             
             // Do any additional setup after loading the view.
         }
@@ -35,15 +39,22 @@ class DataViewController: UIViewController,UITableViewDataSource,UITableViewDele
         //reload the table view
         tableView.reloadData()
     }
+    //MARK: Table view configuration
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return urlsTable.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cellIdentifier = "DataCell"
+       guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? DataTableViewCell
+        else {
+            fatalError("The dequeued cell is not an instance of DataTableViewCell.")
+        }
+        
         let url_entity = urlsTable[indexPath.row]
         
-        cell.textLabel?.text = url_entity.orginal_url!
+        cell.urlDataLabel.text = url_entity.orginal_url!
+        cell.shortUrlDataLabel.text = url_entity.short_url!
         return cell
     }
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
@@ -62,6 +73,7 @@ class DataViewController: UIViewController,UITableViewDataSource,UITableViewDele
         }
         tableView.reloadData()
     }
+
     func getData(){
         let context =  (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         do {
