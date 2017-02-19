@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>new_redy4s.xcscheme</key>
+		<key>simpleURLShortener.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,6 +12,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>DF35A8581E2ABE3F000961B0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DF7F572B1E2AEDC300177743</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DFBB9E091DF4B8FD006C62D0</key>
 		<dict>
 			<key>primary</key>

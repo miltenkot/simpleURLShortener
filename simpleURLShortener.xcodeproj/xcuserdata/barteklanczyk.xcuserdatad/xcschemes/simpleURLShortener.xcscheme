@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DFBB9E091DF4B8FD006C62D0"
-               BuildableName = "new_redy4s.app"
-               BlueprintName = "new_redy4s"
-               ReferencedContainer = "container:new_redy4s.xcodeproj">
+               BuildableName = "simpleURLShortener.app"
+               BlueprintName = "simpleURLShortener"
+               ReferencedContainer = "container:simpleURLShortener.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,14 +28,34 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DF35A8581E2ABE3F000961B0"
+               BuildableName = "simpleURLShortenerTests.xctest"
+               BlueprintName = "simpleURLShortenerTests"
+               ReferencedContainer = "container:simpleURLShortener.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DF7F572B1E2AEDC300177743"
+               BuildableName = "simpleURLShortenerUITests.xctest"
+               BlueprintName = "simpleURLShortenerUITests"
+               ReferencedContainer = "container:simpleURLShortener.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DFBB9E091DF4B8FD006C62D0"
-            BuildableName = "new_redy4s.app"
-            BlueprintName = "new_redy4s"
-            ReferencedContainer = "container:new_redy4s.xcodeproj">
+            BuildableName = "simpleURLShortener.app"
+            BlueprintName = "simpleURLShortener"
+            ReferencedContainer = "container:simpleURLShortener.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DFBB9E091DF4B8FD006C62D0"
-            BuildableName = "new_redy4s.app"
-            BlueprintName = "new_redy4s"
-            ReferencedContainer = "container:new_redy4s.xcodeproj">
+            BuildableName = "simpleURLShortener.app"
+            BlueprintName = "simpleURLShortener"
+            ReferencedContainer = "container:simpleURLShortener.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DFBB9E091DF4B8FD006C62D0"
-            BuildableName = "new_redy4s.app"
-            BlueprintName = "new_redy4s"
-            ReferencedContainer = "container:new_redy4s.xcodeproj">
+            BuildableName = "simpleURLShortener.app"
+            BlueprintName = "simpleURLShortener"
+            ReferencedContainer = "container:simpleURLShortener.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

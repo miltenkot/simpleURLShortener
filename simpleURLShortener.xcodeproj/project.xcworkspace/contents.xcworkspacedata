@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:new_redy4s.xcodeproj">
+      location = "self:/Users/barteklanczyk/Desktop/simpleURLShortener/simpleURLShortener.xcodeproj">
    </FileRef>
 </Workspace>

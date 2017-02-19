@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		DF1885221DFDE36F0005C844 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1885211DFDE36F0005C844 /* MainViewController.swift */; };
+		DF1B0F7E1E185F890038195F /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B0F7D1E185F890038195F /* DataTableViewCell.swift */; };
+		DF255FC71E2BC2DA00BDC161 /* urlShortenerRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF255FC61E2BC2DA00BDC161 /* urlShortenerRequestTest.swift */; };
+		DF35A85C1E2ABE3F000961B0 /* simpleURLShortenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF35A85B1E2ABE3F000961B0 /* simpleURLShortenerTests.swift */; };
+		DF7F572F1E2AEDC300177743 /* simpleURLShortenerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7F572E1E2AEDC300177743 /* simpleURLShortenerUITests.swift */; };
 		DFB430411DFEAA990041B89C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB430401DFEAA990041B89C /* CoreData.framework */; };
 		DFB430671DFEBC9E0041B89C /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB430661DFEBC9E0041B89C /* DataViewController.swift */; };
 		DFBB9E0E1DF4B8FD006C62D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBB9E0D1DF4B8FD006C62D0 /* AppDelegate.swift */; };
@@ -19,13 +23,39 @@
 		DFCB17051E07F3C3003DE398 /* Data_Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFCB17031E07F3C3003DE398 /* Data_Model.xcdatamodeld */; };
 		DFCB17081E07F5A4003DE398 /* URL_Entity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCB17061E07F5A4003DE398 /* URL_Entity+CoreDataClass.swift */; };
 		DFCB17091E07F5A4003DE398 /* URL_Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCB17071E07F5A4003DE398 /* URL_Entity+CoreDataProperties.swift */; };
+		DFE8BCE81E0AD9C5005810A2 /* urlShortener.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE8BCE71E0AD9C5005810A2 /* urlShortener.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF35A85E1E2ABE3F000961B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFBB9E021DF4B8FD006C62D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFBB9E091DF4B8FD006C62D0;
+			remoteInfo = new_redy4s;
+		};
+		DF7F57311E2AEDC300177743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFBB9E021DF4B8FD006C62D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFBB9E091DF4B8FD006C62D0;
+			remoteInfo = new_redy4s;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DF1885211DFDE36F0005C844 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DF1B0F7D1E185F890038195F /* DataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		DF255FC61E2BC2DA00BDC161 /* urlShortenerRequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = urlShortenerRequestTest.swift; sourceTree = "<group>"; };
+		DF35A8591E2ABE3F000961B0 /* simpleURLShortenerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simpleURLShortenerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF35A85B1E2ABE3F000961B0 /* simpleURLShortenerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleURLShortenerTests.swift; sourceTree = "<group>"; };
+		DF35A85D1E2ABE3F000961B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF7F572C1E2AEDC300177743 /* simpleURLShortenerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simpleURLShortenerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF7F572E1E2AEDC300177743 /* simpleURLShortenerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleURLShortenerUITests.swift; sourceTree = "<group>"; };
+		DF7F57301E2AEDC300177743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFB430401DFEAA990041B89C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		DFB430661DFEBC9E0041B89C /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		DFBB9E0A1DF4B8FD006C62D0 /* new_redy4s.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = new_redy4s.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFBB9E0A1DF4B8FD006C62D0 /* simpleURLShortener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleURLShortener.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFBB9E0D1DF4B8FD006C62D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFBB9E121DF4B8FD006C62D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFBB9E141DF4B8FD006C62D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,9 +68,24 @@
 		DFCB17041E07F3C3003DE398 /* Data_Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data_Model.xcdatamodel; sourceTree = "<group>"; };
 		DFCB17061E07F5A4003DE398 /* URL_Entity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL_Entity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DFCB17071E07F5A4003DE398 /* URL_Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL_Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DFE8BCE71E0AD9C5005810A2 /* urlShortener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = urlShortener.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DF35A8561E2ABE3F000961B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7F57291E2AEDC300177743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DFBB9E071DF4B8FD006C62D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,6 +97,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF35A85A1E2ABE3F000961B0 /* simpleURLShortenerTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF255FC61E2BC2DA00BDC161 /* urlShortenerRequestTest.swift */,
+				DF35A85B1E2ABE3F000961B0 /* simpleURLShortenerTests.swift */,
+				DF35A85D1E2ABE3F000961B0 /* Info.plist */,
+			);
+			path = simpleURLShortenerTests;
+			sourceTree = "<group>";
+		};
+		DF7F572D1E2AEDC300177743 /* simpleURLShortenerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DF7F572E1E2AEDC300177743 /* simpleURLShortenerUITests.swift */,
+				DF7F57301E2AEDC300177743 /* Info.plist */,
+			);
+			path = simpleURLShortenerUITests;
+			sourceTree = "<group>";
+		};
 		DFB4303F1DFEAA980041B89C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -63,7 +127,9 @@
 		DFBB9E011DF4B8FD006C62D0 = {
 			isa = PBXGroup;
 			children = (
-				DFBB9E0C1DF4B8FD006C62D0 /* new_redy4s */,
+				DFBB9E0C1DF4B8FD006C62D0 /* simpleURLShortener */,
+				DF35A85A1E2ABE3F000961B0 /* simpleURLShortenerTests */,
+				DF7F572D1E2AEDC300177743 /* simpleURLShortenerUITests */,
 				DFBB9E0B1DF4B8FD006C62D0 /* Products */,
 				DFB4303F1DFEAA980041B89C /* Frameworks */,
 			);
@@ -72,18 +138,22 @@
 		DFBB9E0B1DF4B8FD006C62D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DFBB9E0A1DF4B8FD006C62D0 /* new_redy4s.app */,
+				DFBB9E0A1DF4B8FD006C62D0 /* simpleURLShortener.app */,
+				DF35A8591E2ABE3F000961B0 /* simpleURLShortenerTests.xctest */,
+				DF7F572C1E2AEDC300177743 /* simpleURLShortenerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DFBB9E0C1DF4B8FD006C62D0 /* new_redy4s */ = {
+		DFBB9E0C1DF4B8FD006C62D0 /* simpleURLShortener */ = {
 			isa = PBXGroup;
 			children = (
 				DF1885211DFDE36F0005C844 /* MainViewController.swift */,
 				DFBB9E261DF4BF7A006C62D0 /* MenuController.swift */,
 				DFB430661DFEBC9E0041B89C /* DataViewController.swift */,
+				DF1B0F7D1E185F890038195F /* DataTableViewCell.swift */,
 				DFBB9E0D1DF4B8FD006C62D0 /* AppDelegate.swift */,
+				DFE8BCE71E0AD9C5005810A2 /* urlShortener.swift */,
 				DFBB9E111DF4B8FD006C62D0 /* Main.storyboard */,
 				DFBB9E141DF4B8FD006C62D0 /* Assets.xcassets */,
 				DFBB9E161DF4B8FD006C62D0 /* LaunchScreen.storyboard */,
@@ -91,7 +161,7 @@
 				DFCB170A1E07F618003DE398 /* CoreDataFiles */,
 				DFBB9E231DF4BB3B006C62D0 /* SWRevealController */,
 			);
-			path = new_redy4s;
+			path = simpleURLShortener;
 			sourceTree = "<group>";
 		};
 		DFBB9E231DF4BB3B006C62D0 /* SWRevealController */ = {
@@ -117,9 +187,45 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DFBB9E091DF4B8FD006C62D0 /* new_redy4s */ = {
+		DF35A8581E2ABE3F000961B0 /* simpleURLShortenerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DFBB9E1C1DF4B8FD006C62D0 /* Build configuration list for PBXNativeTarget "new_redy4s" */;
+			buildConfigurationList = DF35A8621E2ABE3F000961B0 /* Build configuration list for PBXNativeTarget "simpleURLShortenerTests" */;
+			buildPhases = (
+				DF35A8551E2ABE3F000961B0 /* Sources */,
+				DF35A8561E2ABE3F000961B0 /* Frameworks */,
+				DF35A8571E2ABE3F000961B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF35A85F1E2ABE3F000961B0 /* PBXTargetDependency */,
+			);
+			name = simpleURLShortenerTests;
+			productName = new_redy4sTests;
+			productReference = DF35A8591E2ABE3F000961B0 /* simpleURLShortenerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DF7F572B1E2AEDC300177743 /* simpleURLShortenerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF7F57331E2AEDC300177743 /* Build configuration list for PBXNativeTarget "simpleURLShortenerUITests" */;
+			buildPhases = (
+				DF7F57281E2AEDC300177743 /* Sources */,
+				DF7F57291E2AEDC300177743 /* Frameworks */,
+				DF7F572A1E2AEDC300177743 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF7F57321E2AEDC300177743 /* PBXTargetDependency */,
+			);
+			name = simpleURLShortenerUITests;
+			productName = new_redy4sUITests;
+			productReference = DF7F572C1E2AEDC300177743 /* simpleURLShortenerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		DFBB9E091DF4B8FD006C62D0 /* simpleURLShortener */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFBB9E1C1DF4B8FD006C62D0 /* Build configuration list for PBXNativeTarget "simpleURLShortener" */;
 			buildPhases = (
 				DFBB9E061DF4B8FD006C62D0 /* Sources */,
 				DFBB9E071DF4B8FD006C62D0 /* Frameworks */,
@@ -129,9 +235,9 @@
 			);
 			dependencies = (
 			);
-			name = new_redy4s;
+			name = simpleURLShortener;
 			productName = new_redy4s;
-			productReference = DFBB9E0A1DF4B8FD006C62D0 /* new_redy4s.app */;
+			productReference = DFBB9E0A1DF4B8FD006C62D0 /* simpleURLShortener.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -140,10 +246,22 @@
 		DFBB9E021DF4B8FD006C62D0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = miltenkot;
 				TargetAttributes = {
+					DF35A8581E2ABE3F000961B0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9AKL82KSN5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DFBB9E091DF4B8FD006C62D0;
+					};
+					DF7F572B1E2AEDC300177743 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9AKL82KSN5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DFBB9E091DF4B8FD006C62D0;
+					};
 					DFBB9E091DF4B8FD006C62D0 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 9AKL82KSN5;
@@ -152,7 +270,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DFBB9E051DF4B8FD006C62D0 /* Build configuration list for PBXProject "new_redy4s" */;
+			buildConfigurationList = DFBB9E051DF4B8FD006C62D0 /* Build configuration list for PBXProject "simpleURLShortener" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -165,12 +283,28 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DFBB9E091DF4B8FD006C62D0 /* new_redy4s */,
+				DFBB9E091DF4B8FD006C62D0 /* simpleURLShortener */,
+				DF35A8581E2ABE3F000961B0 /* simpleURLShortenerTests */,
+				DF7F572B1E2AEDC300177743 /* simpleURLShortenerUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DF35A8571E2ABE3F000961B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7F572A1E2AEDC300177743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DFBB9E081DF4B8FD006C62D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -184,15 +318,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DF35A8551E2ABE3F000961B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF255FC71E2BC2DA00BDC161 /* urlShortenerRequestTest.swift in Sources */,
+				DF35A85C1E2ABE3F000961B0 /* simpleURLShortenerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7F57281E2AEDC300177743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF7F572F1E2AEDC300177743 /* simpleURLShortenerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DFBB9E061DF4B8FD006C62D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DFCB17091E07F5A4003DE398 /* URL_Entity+CoreDataProperties.swift in Sources */,
+				DF1B0F7E1E185F890038195F /* DataTableViewCell.swift in Sources */,
 				DFBB9E0E1DF4B8FD006C62D0 /* AppDelegate.swift in Sources */,
 				DFBB9E271DF4BF7A006C62D0 /* MenuController.swift in Sources */,
 				DFBB9E221DF4BB18006C62D0 /* SWRevealViewController.m in Sources */,
 				DFCB17081E07F5A4003DE398 /* URL_Entity+CoreDataClass.swift in Sources */,
+				DFE8BCE81E0AD9C5005810A2 /* urlShortener.swift in Sources */,
 				DFB430671DFEBC9E0041B89C /* DataViewController.swift in Sources */,
 				DF1885221DFDE36F0005C844 /* MainViewController.swift in Sources */,
 				DFCB17051E07F3C3003DE398 /* Data_Model.xcdatamodeld in Sources */,
@@ -200,6 +353,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF35A85F1E2ABE3F000961B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFBB9E091DF4B8FD006C62D0 /* simpleURLShortener */;
+			targetProxy = DF35A85E1E2ABE3F000961B0 /* PBXContainerItemProxy */;
+		};
+		DF7F57321E2AEDC300177743 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFBB9E091DF4B8FD006C62D0 /* simpleURLShortener */;
+			targetProxy = DF7F57311E2AEDC300177743 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DFBB9E111DF4B8FD006C62D0 /* Main.storyboard */ = {
@@ -221,6 +387,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DF35A8601E2ABE3F000961B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9AKL82KSN5;
+				INFOPLIST_FILE = new_redy4sTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.miltenkot.new-redy4sTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/simpleURLShortener.temp_caseinsensitive_rename.app/simpleURLShortener.temp_caseinsensitive_rename";
+			};
+			name = Debug;
+		};
+		DF35A8611E2ABE3F000961B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9AKL82KSN5;
+				INFOPLIST_FILE = new_redy4sTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.miltenkot.new-redy4sTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/simpleURLShortener.temp_caseinsensitive_rename.app/simpleURLShortener.temp_caseinsensitive_rename";
+			};
+			name = Release;
+		};
+		DF7F57341E2AEDC300177743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 9AKL82KSN5;
+				INFOPLIST_FILE = new_redy4sUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.miltenkot.new-redy4sUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = new_redy4s;
+			};
+			name = Debug;
+		};
+		DF7F57351E2AEDC300177743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 9AKL82KSN5;
+				INFOPLIST_FILE = new_redy4sUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.miltenkot.new-redy4sUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = new_redy4s;
+			};
+			name = Release;
+		};
 		DFBB9E1A1DF4B8FD006C62D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -322,9 +546,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9AKL82KSN5;
-				INFOPLIST_FILE = new_redy4s/Info.plist;
+				INFOPLIST_FILE = simpleURLShortener/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "pl.miltenkot.new-redy4s";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.miltenkot.simpleURLShortener;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "new_redy4s/new_redy4s-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -338,9 +562,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9AKL82KSN5;
-				INFOPLIST_FILE = new_redy4s/Info.plist;
+				INFOPLIST_FILE = simpleURLShortener/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "pl.miltenkot.new-redy4s";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.miltenkot.simpleURLShortener;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "new_redy4s/new_redy4s-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -350,7 +574,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DFBB9E051DF4B8FD006C62D0 /* Build configuration list for PBXProject "new_redy4s" */ = {
+		DF35A8621E2ABE3F000961B0 /* Build configuration list for PBXNativeTarget "simpleURLShortenerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF35A8601E2ABE3F000961B0 /* Debug */,
+				DF35A8611E2ABE3F000961B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF7F57331E2AEDC300177743 /* Build configuration list for PBXNativeTarget "simpleURLShortenerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF7F57341E2AEDC300177743 /* Debug */,
+				DF7F57351E2AEDC300177743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFBB9E051DF4B8FD006C62D0 /* Build configuration list for PBXProject "simpleURLShortener" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DFBB9E1A1DF4B8FD006C62D0 /* Debug */,
@@ -359,7 +601,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DFBB9E1C1DF4B8FD006C62D0 /* Build configuration list for PBXNativeTarget "new_redy4s" */ = {
+		DFBB9E1C1DF4B8FD006C62D0 /* Build configuration list for PBXNativeTarget "simpleURLShortener" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DFBB9E1D1DF4B8FD006C62D0 /* Debug */,
