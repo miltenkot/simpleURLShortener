@@ -44,7 +44,8 @@ class MainViewController: UIViewController,UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
    fileprivate struct Api{
-        static let key = "AIzaSyAU_qsy0wR-_onF5haH94lVoSMQoezC6dc"
+    //put here your URL Google API KEY
+        static let key = ""
     }
     //MARK: TextField properties
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
